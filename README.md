@@ -1,13 +1,34 @@
 # Landing Page Project
+[starter code](https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page) was used to build the page template.
 
-## Table of Contents
+# About The Project
+This web page template can be used to create multiple sections page with the features:
 
-* [Instructions](#instructions)
+* Dynamically create a navigation bar from page sections.
+* Navigation link enables smooth scrolling to the section.
+* Highlighting the section in the viewport and it's navigation link.
+* Styles with animation.
+* The ability to add as many sections as wanted.
+* Responsive layout.
+  
+# Usage
+To add a section to the page:
 
-## Instructions
+1. Nest a section element under body -> main.
+2. Set a unique id.
+3. Set a `data-nav` attribute with the navigation link text.
+   
+### Example:
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+   ```
+   <body>
+        <header>
+            ...
+        </header>
+        <main>
+            <section id="section1" data-nav="Section 1">
+                YOUR SECTION CONTENT
+            </section>
+        </main>
+    </body>
+    ```
